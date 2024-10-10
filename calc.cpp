@@ -6,11 +6,11 @@ int main() {
 
     int a, b, op;   double result;
 
-    cout << "Ââåä³òü ïåðøå ÷èñëî\n";   cin >> a;
+    cout << "Ã‚Ã¢ÄºÃ¤Å‚ÅˆÃ¼ ÄÄºÄ‘Å™Äº Ã·ÄÅ„Ã«Ã®\n";   cin >> a;
 
-    cout << "Ââåä³òü îïåðàòîð\n1\t+\n2\t-\n3\t*\n4\t/\n\n";  cin >> op;
+    cout << "Ã‚Ã¢ÄºÃ¤Å‚ÅˆÃ¼ Ã®ÄÄºÄ‘Å•ÅˆÃ®Ä‘\n1\t+\n2\t-\n3\t*\n4\t/\n\n";  cin >> op;
 
-    cout << "Ââåä³òü äðóãå ÷èñëî\n";     cin >> b;
+    cout << "Ã‚Ã¢ÄºÃ¤Å‚ÅˆÃ¼ Ã¤Ä‘Ã³ÄƒÄº Ã·ÄÅ„Ã«Ã®\n";     cin >> b;
 
     switch (op) {
 
@@ -18,20 +18,23 @@ int main() {
 
         break;
 
-    case 2:    // code
+    case 2:     result = a - b;
+        
+        break;
+
+    case 3:     result = a * b;
 
         break;
 
-    case 3:     // code
+    case 4:     result = a / b;
 
         break;
-
-    case 4:     // code
+    case 5:     result = a ^ b;
 
         break;
-
+        
     }
 
-    cout << "Ðåçóëüòàò = " << result;
+    cout << "ÄÄºÃ§Ã³Ã«Ã¼ÅˆÅ•Åˆ = " << result;
 
 }
